@@ -1,5 +1,3 @@
-# First plot: a histogram of the global active power.
-
 ### THE FOLLOWING CODE BLOCK IS COMMON TO ALL 4 PLOTS ###
 
 # Read in data if the file exists. Only read the first 70000 lines (covering dates up to 2007-02-03)
