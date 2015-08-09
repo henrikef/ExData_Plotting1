@@ -32,13 +32,14 @@ par(cex = 0.75)
 #Set date time output format to english
 Sys.setlocale("LC_TIME", "C")
 
-#plot of energy sub metering vs time.
-plot(data$DateTime, data$Sub_metering_1, pch=".", type="l",
+#plot of energy sub metering vs time. Y axis label.
+#3 lines with different colors corresponding to the 3 submetering columns.
+plot(data$DateTime, data$Sub_metering_1, type="l",
      main="", xlab="", ylab="Energy sub metering")
 lines(data$DateTime, data$Sub_metering_2, col="red")
 lines(data$DateTime, data$Sub_metering_3, col="blue")
 
-#legend...
+#legend. 3 entries: Lines in different colors with description.
 legend( "topright",  lwd=c(1,1,1), lty=c(1,1,1), col=c("black", "red", "blue"), 
         legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 

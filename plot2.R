@@ -32,8 +32,9 @@ par(cex = 0.75)
 #Set date time output format to english
 Sys.setlocale("LC_TIME", "C")
 
-#plot of global active power vs time.
-plot(data$DateTime, data$Global_active_power, pch=".", type="l",
+#plot of global active power vs time as a thin black line. Set y axis title. 
+#no main and x axis title.
+plot(data$DateTime, data$Global_active_power, type="l",
      main="", xlab="", ylab="Global Active Power (kilowatts)")
 
 #save plot

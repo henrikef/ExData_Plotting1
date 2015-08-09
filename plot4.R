@@ -32,12 +32,12 @@ par(cex = 0.66)
 #Set date time output format to english
 Sys.setlocale("LC_TIME", "C")
 
-#plot of global active power vs time.
-plot(data$DateTime, data$Global_active_power, pch=".", type="l",
+#plot of global active power vs time, same as plot 2.
+plot(data$DateTime, data$Global_active_power, type="l",
      main="", xlab="", ylab="Global Active Power")
 
-#plot of energy sub metering vs time.
-plot(data$DateTime, data$Sub_metering_1, pch=".", type="l",
+#plot of energy sub metering vs time, same as plot 3.
+plot(data$DateTime, data$Sub_metering_1, type="l",
      main="", xlab="", ylab="Energy sub metering")
 lines(data$DateTime, data$Sub_metering_2, col="red")
 lines(data$DateTime, data$Sub_metering_3, col="blue")
@@ -48,12 +48,12 @@ legend( "topright",  lwd=c(1,1,1), lty=c(1,1,1), col=c("black", "red", "blue"), 
         legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 
-#plot of voltage vs time.
-plot(data$DateTime, data$Voltage, pch=".", type="l",
+#plot of voltage vs time as a thin black line.
+plot(data$DateTime, data$Voltage, type="l",
      main="", xlab="datetime", ylab="Voltage")
 
-#plot of global reactive power vs time.
-plot(data$DateTime, data$Global_reactive_power, pch=".", type="l",
+#plot of global reactive power vs time as a thin black line.
+plot(data$DateTime, data$Global_reactive_power, type="l",
      main="", xlab="datetime", ylab="Global_reactive_power")
 
 

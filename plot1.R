@@ -29,7 +29,7 @@ par(mfcol = c(1,1))
 #global font size
 par(cex = 0.75)
 
-#histogram of global active power
+#histogram of global active power. Fill color is red. Set main and x axis titles
 hist(data$Global_active_power, col="red", 
      main="Global Active Power", xlab="Global Active Power (kilowatts)")
 
